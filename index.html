@@ -15,15 +15,16 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="#" class="nav-brand" onclick="showPage('home')">
+            <a href="#" class="nav-brand" onclick="showPage('home'); return false;">
                 <img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/242042/20250213032535_851_mascotOrig.png" alt="CV">
                 <span>Hack Club CV</span>
             </a>
+
             <ul class="nav-links">
-                <li><a href="#" onclick="showPage('home')" class="active" id="nav-home">Home</a></li>
-                <li><a href="#" onclick="showPage('about')" id="nav-about">About</a></li>
-                <li><a href="#" onclick="showPage('founders')" id="nav-founders">Team</a></li>
-                <li><a href="#" onclick="showPage('calendar')" id="nav-calendar">Events</a></li>
+                <li><a href="#" onclick="showPage('home'); return false;" class="active" id="nav-home">Home</a></li>
+                <li><a href="#" onclick="showPage('about'); return false;" id="nav-about">About</a></li>
+                <li><a href="#" onclick="showPage('founders'); return false;" id="nav-founders">Team</a></li>
+                <li><a href="#" onclick="showPage('calendar'); return false;" id="nav-calendar">Events</a></li>
             </ul>
         </div>
     </nav>
@@ -32,93 +33,61 @@
         <!-- Home Page -->
         <div id="home" class="page active">
             <section class="hero">
-                <p class="eyebrow">Crescenta Valley High School</p>
-                <h1 class="ultratitle">A place to build<br>cool stuff.</h1>
-                <p class="subtitle" style="max-width: 600px; margin: 0 auto var(--spacing-3);">
-                    We're a community of students who love making things with code. 
-                    No experience required—just bring your curiosity and we'll provide the rest.
-                </p>
-                <div style="display: flex; gap: var(--spacing-2); justify-content: center; flex-wrap: wrap;">
-                    <a href="#" class="button button-lg" onclick="showPage('about')">
-                        Join the club
-                    </a>
-                    <a href="#" class="button button-lg button-outline" onclick="showPage('calendar')">
-                        See events
-                    </a>
+                <p class="eyebrow">Crescenta Valley High School Hack Club</p>
+                <h1 class="ultratitle">A club where you build<br>cool stuff!</h1>
+                <p class="subtitle">We're a club at CV who love making things with computers. No experience required — just bring an interest to learn!</p>
+                <div class="hero-buttons">
+                    <a href="#" class="button button-lg" onclick="showPage('about'); return false;">Join the club</a>
+                    <a href="#" class="button button-lg button-outline" onclick="showPage('calendar'); return false;">See events</a>
                 </div>
             </section>
 
-            <section class="grid grid-3">
-                <article class="card card-interactive" onclick="showPage('calendar')">
+            <section class="features">
+                <article class="card card-interactive" onclick="showPage('calendar'); return false;">
                     <div class="feature-icon">🛠️</div>
                     <h3 class="headline">Weekly Workshops</h3>
-                    <p style="color: var(--muted);">
-                        Learn web dev, game design, and hardware hacking through hands-on projects. 
-                        We meet every Tuesday after school.
-                    </p>
+                    <p class="muted">Learn web dev, game design, and hardware hacking through hands-on projects. We meet every Tuesday after school.</p>
                 </article>
 
-                <article class="card card-interactive" onclick="showPage('calendar')">
+                <article class="card card-interactive" onclick="showPage('calendar'); return false;">
                     <div class="feature-icon">🏆</div>
                     <h3 class="headline">Hackathons</h3>
-                    <p style="color: var(--muted);">
-                        12-hour coding competitions with prizes, pizza, and plenty of time to hang out. 
-                        Our next one is Feb 20th.
-                    </p>
+                    <p class="muted">12-hour coding competitions with prizes, pizza, and plenty of time to hang out. Our next one is Feb 20th.</p>
                 </article>
 
-                <article class="card card-interactive" onclick="showPage('about')">
+                <article class="card card-interactive" onclick="showPage('about'); return false;">
                     <div class="feature-icon">🤝</div>
                     <h3 class="headline">Community First</h3>
-                    <p style="color: var(--muted);">
-                        Connect with other students who are passionate about tech. 
-                        We learn together and help each other grow.
-                    </p>
+                    <p class="muted">Connect with other students who are passionate about tech. We learn together and help each other grow.</p>
                 </article>
             </section>
 
-            <section class="card card-sunken mt-4" style="text-align: center; padding: var(--spacing-4);">
+            <section class="welcome-card">
                 <h2 class="title">Everyone is welcome</h2>
-                <p class="subtitle" style="max-width: 600px; margin: 0 auto;">
-                    Whether you've never written a line of code or you're already shipping production apps, 
-                    there's a place for you here. We believe the best way to learn is by building real projects.
-                </p>
+                <p class="subtitle">Whether you've never written a line of code or you're already shipping production apps, there's a place for you here. We believe the best way to learn is by building real projects.</p>
             </section>
         </div>
 
         <!-- About Page -->
         <div id="about" class="page">
-            <section style="margin-bottom: var(--spacing-4);">
+            <section class="page-header">
                 <p class="eyebrow">About us</p>
                 <h1 class="ultratitle">Learning by making.<br>Making together.</h1>
             </section>
 
-            <div class="grid grid-2" style="align-items: center;">
-                <div>
-                    <p style="font-size: var(--font-3); margin-bottom: var(--spacing-3);">
-                        Hack Club CV started in 2026 (by a sophomore!) when a group of students at CVHS 
-                        decided they wanted a space to build projects outside of class.
-                    </p>
-                    <p style="color: var(--muted); margin-bottom: var(--spacing-3);">
-                        We're part of the global Hack Club network, but our community is uniquely ours. 
-                        We run workshops, host hackathons, and spend a lot of time debugging code together 
-                        (and occasionally debugging each other's life choices).
-                    </p>
-                    <p style="color: var(--muted);">
-                        Our philosophy is simple: you learn best when you're building things you care about, 
-                        surrounded by people who support you. No grades, no pressure—just genuine curiosity 
-                        and the joy of making things work.
-                    </p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">Hack Club CV started in 2026 (by a sophomore!) when a group of students at CVHS decided they wanted a space to build projects outside of class.</p>
+                    <p class="muted">We're part of the global Hack Club network, but our community is uniquely ours. We run workshops, host hackathons, and spend a lot of time debugging code together (and occasionally debugging each other's life choices).</p>
+                    <p class="muted">Our philosophy is simple: you learn best when you're building things you care about, surrounded by people who support you. No grades, no pressure — just genuine curiosity and the joy of making things work.</p>
                 </div>
-                <div class="card" style="text-align: center; padding: var(--spacing-4);">
-                    <img src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Orpheus" style="max-width: 200px; margin-bottom: var(--spacing-2);">
-                    <p style="color: var(--muted); font-size: var(--font-2);">
-                        Official Hack Club chapter since 2024
-                    </p>
+                <div class="card about-badge">
+                    <img src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Orpheus">
+                    <p class="muted">Official Hack Club chapter since 2024</p>
                 </div>
             </div>
 
-            <section class="grid grid-3 mt-4">
+            <section class="stats">
                 <div class="stat">
                     <span class="stat-number">3+</span>
                     <span class="stat-label">Active members (pls join we need more)</span>
@@ -136,56 +105,46 @@
 
         <!-- Founders Page -->
         <div id="founders" class="page">
-            <section style="text-align: center; margin-bottom: var(--spacing-4);">
+            <section class="page-header center">
                 <p class="eyebrow">The team</p>
                 <h1 class="ultratitle">Meet the humans<br>behind this.</h1>
                 <p class="subtitle">We keep this thing running (most of the time)</p>
             </section>
 
-            <div class="grid grid-2">
-                <article class="card" style="display: flex; gap: var(--spacing-3); align-items: flex-start;">
-                    <div style="font-size: 64px; line-height: 1;">🦅</div>
-                    <div>
-                        <h3 class="headline mb-2">Aaron Ho</h3>
-                        <span class="badge badge-outline mb-2">Leader/Co-leader</span>
-                        <p style="color: var(--muted); margin-top: var(--spacing-2);">
-                           Sigma
-                        </p>
+            <div class="founders-grid">
+                <article class="card founder-card">
+                    <div class="founder-avatar">😎</div>
+                    <div class="founder-info">
+                        <h3 class="headline">Aaron Ho</h3>
+                        <span class="badge">Leader/Co-leader</span>
+                        <p class="muted">A Sophomore who started the club in 2026. Loves learning about programming and playing the violin.</p>
                     </div>
                 </article>
 
-                <article class="card" style="display: flex; gap: var(--spacing-3); align-items: flex-start;">
-                    <div style="font-size: 64px; line-height: 1;">💻</div>
-                    <div>
-                        <h3 class="headline mb-2">James Gerald Arroyo Yap</h3>
-                        <span class="badge badge-outline mb-2">Co-Leader</span>
-                        <p style="color: var(--muted); margin-top: var(--spacing-2);">
-                            Loves TypeScript way too much. WILL talk your ear off about using plain old HTML instead of beautiful react :D
-                        </p>
+                <article class="card founder-card">
+                    <div class="founder-avatar">💻</div>
+                    <div class="founder-info">
+                        <h3 class="headline">James Gerald Arroyo Yap</h3>
+                        <span class="badge">Co-Leader</span>
+                        <p class="muted">Loves TypeScript way too much. WILL talk your ear off about using plain old HTML instead of beautiful react :D</p>
                     </div>
                 </article>
 
-                <article class="card" style="display: flex; gap: var(--spacing-3); align-items: flex-start;">
-                    <div style="font-size: 64px; line-height: 1;">📅</div>
-                    <div>
-                        <h3 class="headline mb-2">Sam Chen</h3>
-                        <span class="badge badge-outline mb-2">Events Coordinator</span>
-                        <p style="color: var(--muted); margin-top: var(--spacing-2);">
-                            Senior who actually knows how to plan things. Makes sure our hackathons 
-                            happen on schedule and that we don't run out of pizza.
-                        </p>
+                <article class="card founder-card">
+                    <div class="founder-avatar">📅</div>
+                    <div class="founder-info">
+                        <h3 class="headline">Placeholder</h3>
+                        <span class="badge">Events Coordinator</span>
+                        <p class="muted">Senior who actually knows how to plan things. Makes sure our hackathons happen on schedule and that we don't run out of pizza.</p>
                     </div>
                 </article>
 
-                <article class="card" style="display: flex; gap: var(--spacing-3); align-items: flex-start;">
-                    <div style="font-size: 64px; line-height: 1;">🔧</div>
-                    <div>
-                        <h3 class="headline mb-2">Taylor Wong</h3>
-                        <span class="badge badge-outline mb-2">Tech Lead</span>
-                        <p style="color: var(--muted); margin-top: var(--spacing-2);">
-                            Junior who fixes our servers at 2am. Knows more about backend infrastructure 
-                            than most adults. Probably running on energy drinks and pure willpower.
-                        </p>
+                <article class="card founder-card">
+                    <div class="founder-avatar">🔧</div>
+                    <div class="founder-info">
+                        <h3 class="headline">Placeholder</h3>
+                        <span class="badge">Tech Lead</span>
+                        <p class="muted">Junior who fixes our servers at 2am. Knows more about backend infrastructure than most adults. Probably running on energy drinks and pure willpower.</p>
                     </div>
                 </article>
             </div>
@@ -193,116 +152,22 @@
 
         <!-- Calendar Page -->
         <div id="calendar" class="page">
-            <section style="margin-bottom: var(--spacing-4);">
+            <section class="page-header">
                 <p class="eyebrow">Events</p>
                 <h1 class="ultratitle">What's happening.</h1>
+                <p class="subtitle">Check out our upcoming workshops, hackathons, and club meetings</p>
             </section>
 
-            <div class="grid grid-2">
-                <section class="card">
-                    <h2 class="title">February 2026</h2>
-                    <div class="calendar-grid">
-                        <div class="calendar-header">Su</div>
-                        <div class="calendar-header">Mo</div>
-                        <div class="calendar-header">Tu</div>
-                        <div class="calendar-header">We</div>
-                        <div class="calendar-header">Th</div>
-                        <div class="calendar-header">Fr</div>
-                        <div class="calendar-header">Sa</div>
+            <section class="calendar-wrapper">
+                <div class="calendar-container">
+                    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&showPrint=0&title=Hack%20Club%20CV%20Events&src=Y2xhc3Nyb29tMTE4MDU5MzI4MDI3OTUyNDE2ODcwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23b80672&showTabs=1&showNav=1&showDate=1&showCalendars=0&mode=MONTH" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </section>
 
-                        <div class="calendar-day other-month">26</div>
-                        <div class="calendar-day other-month">27</div>
-                        <div class="calendar-day other-month">28</div>
-                        <div class="calendar-day other-month">29</div>
-                        <div class="calendar-day other-month">30</div>
-                        <div class="calendar-day other-month">31</div>
-                        <div class="calendar-day">1</div>
-                        <div class="calendar-day">2</div>
-                        <div class="calendar-day">3</div>
-                        <div class="calendar-day">4</div>
-                        <div class="calendar-day">5</div>
-                        <div class="calendar-day">6</div>
-                        <div class="calendar-day today has-event">7</div>
-                        <div class="calendar-day">8</div>
-                        <div class="calendar-day has-event">9</div>
-                        <div class="calendar-day">10</div>
-                        <div class="calendar-day">11</div>
-                        <div class="calendar-day has-event">12</div>
-                        <div class="calendar-day">13</div>
-                        <div class="calendar-day">14</div>
-                        <div class="calendar-day">15</div>
-                        <div class="calendar-day">16</div>
-                        <div class="calendar-day has-event">17</div>
-                        <div class="calendar-day">18</div>
-                        <div class="calendar-day">19</div>
-                        <div class="calendar-day has-event">20</div>
-                        <div class="calendar-day">21</div>
-                        <div class="calendar-day">22</div>
-                        <div class="calendar-day">23</div>
-                        <div class="calendar-day">24</div>
-                        <div class="calendar-day has-event">25</div>
-                        <div class="calendar-day">26</div>
-                        <div class="calendar-day">27</div>
-                        <div class="calendar-day">28</div>
-                    </div>
-                </section>
-
-                <section>
-                    <h2 class="title">Upcoming</h2>
-                    
-                    <article class="event-item">
-                        <div class="event-date">
-                            <span class="event-day">07</span>
-                            <span class="event-month">Feb</span>
-                        </div>
-                        <div>
-                            <h3 style="font-weight: bold; margin-bottom: 4px;">Website Launch</h3>
-                            <p style="color: var(--muted); font-size: var(--font-2);">
-                                Celebrating our new site with demos and pizza. Room 404, 3pm.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="event-item">
-                        <div class="event-date">
-                            <span class="event-day">09</span>
-                            <span class="event-month">Feb</span>
-                        </div>
-                        <div>
-                            <h3 style="font-weight: bold; margin-bottom: 4px;">Web Dev Workshop</h3>
-                            <p style="color: var(--muted); font-size: var(--font-2);">
-                                Intro to HTML/CSS for beginners. Bring your laptop! 3:30pm.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="event-item">
-                        <div class="event-date">
-                            <span class="event-day">12</span>
-                            <span class="event-month">Feb</span>
-                        </div>
-                        <div>
-                            <h3 style="font-weight: bold; margin-bottom: 4px;">Game Dev Night</h3>
-                            <p style="color: var(--muted); font-size: var(--font-2);">
-                                Making games with JavaScript and p5.js. 3:30pm, Computer Lab.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="event-item">
-                        <div class="event-date">
-                            <span class="event-day">20</span>
-                            <span class="event-month">Feb</span>
-                        </div>
-                        <div>
-                            <h3 style="font-weight: bold; margin-bottom: 4px;">Spring Hackathon</h3>
-                            <p style="color: var(--muted); font-size: var(--font-2);">
-                                12-hour coding competition. Prizes, food, and fun. 9am, Library.
-                            </p>
-                        </div>
-                    </article>
-                </section>
-            </div>
+            <section class="calendar-cta">
+                <a href="https://calendar.google.com/calendar/u/0/r?cid=Y2xhc3Nyb29tMTE4MDU5MzI4MDI3OTUyNDE2ODcwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" target="_blank" class="button button-lg">📅 Add to Your Calendar</a>
+                <p class="muted">Subscribe to get notifications about new events and updates</p>
+            </section>
         </div>
     </main>
 
@@ -312,18 +177,14 @@
                 <img src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club">
                 <span>Hack Club CV</span>
             </div>
-            <p style="color: var(--muted); margin-bottom: var(--spacing-2);">
-                Crescenta Valley High School • La Crescenta, CA • Made with ❤️ by students, for students.
-            </p>
+            <p class="muted">Crescenta Valley High School • La Crescenta, CA • Made with ❤️ by students, for students.</p>
             <div class="footer-links">
-                <a href="#" onclick="showPage('home')">Home</a>
-                <a href="#" onclick="showPage('about')">About</a>
-                <a href="#" onclick="showPage('founders')">Team</a>
-                <a href="#" onclick="showPage('calendar')">Events</a>
+                <a href="#" onclick="showPage('home'); return false;">Home</a>
+                <a href="#" onclick="showPage('about'); return false;">About</a>
+                <a href="#" onclick="showPage('founders'); return false;">Team</a>
+                <a href="#" onclick="showPage('calendar'); return false;">Events</a>
             </div>
-            <p style="color: var(--muted); font-size: var(--font-1); margin-top: var(--spacing-2);">
-                This site is open source. View it on <a href="#" style="color: var(--primary);">GitHub</a>.
-            </p>
+            <p class="muted small">This site is open source. View it on <a href="https://github.com" target="_blank" class="primary-link">GitHub</a>.</p>
         </div>
     </footer>
 

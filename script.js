@@ -1,30 +1,22 @@
-function showPage(pageName) {
+// Page Navigation
+function showPage(pageId) {
     // Hide all pages
     document.querySelectorAll('.page').forEach(page => {
         page.classList.remove('active');
     });
     
     // Show selected page
-    document.getElementById(pageName).classList.add('active');
+    document.getElementById(pageId).classList.add('active');
     
-    // Update nav active state
+    // Update nav active states
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.classList.remove('active');
     });
-    document.getElementById('nav-' + pageName).classList.add('active');
+    const navElement = document.getElementById('nav-' + pageId);
+    if (navElement) navElement.classList.add('active');
     
     // Scroll to top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo(0, 0);
+    
+    return false;
 }
-
-// Add click handlers to calendar days
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.calendar-day.has-event').forEach(day => {
-        day.addEventListener('click', () => {
-            day.style.transform = 'scale(0.95)';
-            setTimeout(() => {
-                day.style.transform = '';
-            }, 100);
-        });
-    });
-});
