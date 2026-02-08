@@ -1,17 +1,21 @@
-&lt;div align="center"&gt;
+&lt;p align="center"&gt;
+  &lt;img src="https://assets.hackclub.com/flag-orpheus-top.svg" width="120" alt="Hack Club"&gt;
+&lt;/p&gt;
 
-&lt;img src="https://assets.hackclub.com/flag-orpheus-top.svg" width="120" alt="Hack Club"&gt;
+&lt;h1 align="center"&gt;Hack Club CV&lt;/h1&gt;
 
-# Hack Club CV
+&lt;p align="center"&gt;
+  &lt;strong&gt;Crescenta Valley High School's Hack Club&lt;/strong&gt;
+&lt;/p&gt;
 
-**Crescenta Valley High School's Hack Club**
+&lt;p align="center"&gt;
+  A club where you build cool stuff!
+&lt;/p&gt;
 
-A club where you build cool stuff!
-
-&lt;img src="https://img.shields.io/badge/Hack%20Club-Official%20Chapter-ec3750?style=for-the-badge"&gt;
-&lt;img src="https://img.shields.io/badge/Made%20by-Students-5bc0de?style=for-the-badge"&gt;
-
-&lt;/div&gt;
+&lt;p align="center"&gt;
+  &lt;img src="https://img.shields.io/badge/Hack%20Club-Official%20Chapter-ec3750?style=for-the-badge"&gt;
+  &lt;img src="https://img.shields.io/badge/Made%20by-Students-5bc0de?style=for-the-badge"&gt;
+&lt;/p&gt;
 
 ---
 
@@ -73,12 +77,14 @@ We meet every **Tuesday after school**.
 
 ---
 
-&lt;div align="center"&gt;
+&lt;p align="center"&gt;
+  &lt;img src="https://assets.hackclub.com/flag-orpheus-top.svg" width="60"&gt;
+&lt;/p&gt;
 
-&lt;img src="https://assets.hackclub.com/flag-orpheus-top.svg" width="60"&gt;
+&lt;p align="center"&gt;
+  &lt;strong&gt;Made with ❤️ by students, for students.&lt;/strong&gt;
+&lt;/p&gt;
 
-**Made with ❤️ by students, for students.**
-
-Crescenta Valley High School • La Crescenta, CA
-
-&lt;/div&gt;
+&lt;p align="center"&gt;
+  Crescenta Valley High School • La Crescenta, CA
+&lt;/p&gt;
